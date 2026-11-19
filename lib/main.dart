@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'cores.dart';
 import 'home_page.dart';
 
 void main() {
@@ -11,10 +12,17 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Saborê',
+      title: 'LondonFood',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepOrange),
+        // Cores gerais do app
+        colorScheme: ColorScheme.fromSeed(
+          seedColor: Cores.vermelho,
+          primary: Cores.vermelho,
+          error: Cores.vermelhoEscuro,
+          surface: Cores.branco,
+        ),
+        scaffoldBackgroundColor: Cores.bege,
       ),
       home: const HomePage(),
     );
