@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'cores.dart';
-import 'home_page.dart';
+import 'tela_principal.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,7 +16,6 @@ class MyApp extends StatelessWidget {
       title: 'LondonFood',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        // Cores gerais do app
         colorScheme: ColorScheme.fromSeed(
           seedColor: Cores.vermelho,
           primary: Cores.vermelho,
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
         ),
         scaffoldBackgroundColor: Cores.bege,
       ),
-      home: const HomePage(),
+      home: const TelaPrincipal(),
     );
   }
 }
